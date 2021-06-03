@@ -72,6 +72,8 @@ CREATE TABLE [Employees] (
     [FirstName] VARCHAR(255) NULL,
     [BirthDate] VARCHAR(255),
 );
+ALTER TABLE Employees --зміна типу колонки
+ALTER COLUMN BirthDate DATE;
 GO
 
 INSERT INTO Employees([LastName],[FirstName],[BirthDate]) VALUES('Octavius','Rich','16/03/1965'),('Cedric','Strickland','19/06/1988'),('Allen','Sargent','01/10/1982'),('Justin','Moran','14/08/1967'),('Fritz','Donovan','22/03/1970'),('Stuart','Chang','11/09/1999'),('Seth','Witt','05/11/2003'),('Colorado','Castro','03/04/1984'),('Jelani','Crane','02/01/1974'),('Ryder','Elliott','22/06/2000'),('Erasmus','Bean','17/09/1980'),('Christopher','Parsons','26/02/1968'),('Axel','Richardson','01/04/1974'),('Cairo','Oliver','09/10/1985'),('Adrian','Pacheco','06/04/1966'),('Ivor','Branch','30/06/1975'),('Nero','Callahan','28/12/1968'),('Brendan','Pruitt','14/09/1980'),('Murphy','Reid','03/09/1987'),('Geoffrey','Herman','30/06/1997'),('Tyler','Lott','21/08/1989'),('Zeph','Blevins','28/05/1971'),('Dieter','Ramsey','11/06/1988'),('Addison','Harding','28/04/2001'),('Solomon','Newman','03/09/1975'),('David','Woods','01/09/1973'),('Emery','Mcpherson','26/05/1973'),('Grady','Colon','11/12/1961'),('Lucius','Owens','22/12/2001'),('Herrod','Cortez','09/01/1992');
